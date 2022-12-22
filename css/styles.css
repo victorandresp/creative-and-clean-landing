@@ -1,0 +1,115 @@
+:root{ 
+    --primary-color: #ef8847;
+    --secondary-color: #363636;
+    --white-color: #fff;
+}
+*, ::before, ::after{
+    font-family: 'Roboto Slab';
+    /* font-family: 'Karla', sans-serif; **/
+}
+html, body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* .row{
+    display: flex;
+} */
+.banner{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position:bottom;
+    position: relative;
+}
+.title-banner{
+    position: absolute;
+    top:20%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 50%);
+}
+.title-banner>h1, .title-banner>h2{
+    text-align: center;
+    text-shadow: 0px 4px 15px rgba(0,0,0,0.25);
+    color:var(--white-color);
+}
+.title-banner>h1{
+    font-size: xxx-large;
+    letter-spacing: 5px;
+}
+.title-banner>h2{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.button{
+    border: none;    
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.button:focus {
+    outline:0;
+}
+.button::after{
+    content: " →";
+}
+.middle{
+    align-items: center;
+}
+.information{
+    padding:50px;
+}
+.information>h1{
+    font-size: xx-large;
+    margin-bottom: 20px;
+    /* margin: 50px 80px 50px 0px; */
+    color: var(--primary-color);
+}
+.information>p{
+    color: var(--secondary-color);
+    line-height: 1.8;
+}
+
+.aside{
+    width: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/bottom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position:center;
+}
+.list-links{
+    /* height: 40vh; */
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 50px; 
+}
+.list-items{
+    display: flex;
+    justify-content: center;
+}
+.list-links ul>p{
+    margin-bottom: 20px;
+}
+.list-links ul>li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.copyright{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    box-shadow: 0px -8px 12px -2px rgba(0,0,0,0.24);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
